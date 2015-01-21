@@ -63,6 +63,10 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Your location helps the app determine where to point your device.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Your location helps the app determine where to point your device.</string>
 	<key>UIPrerenderedIcon</key>
 	<true/>
 	<key>UIRequiredDeviceCapabilities</key>

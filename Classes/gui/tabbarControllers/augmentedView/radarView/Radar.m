@@ -76,7 +76,10 @@
             } else if (poi.azimuth == (3 * M_PI / 2)) {
                 x = RADIUS - poi.radialDistance / scale;
                 y = RADIUS;
-            }
+			} else {
+				x = RADIUS;
+				y = RADIUS;
+			}
             //drawing the radar point
             CGContextSetRGBFillColor(contextRef, 255, 0, 0, 1);
             if (x <= RADIUS * 2 && x >= 0 && y >= 0 && y <= RADIUS * 2) {
