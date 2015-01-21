@@ -31,6 +31,7 @@
 
 @property (nonatomic, retain) DataSourceManager *_dataSourceManager;
 @property (nonatomic, retain) id<PluginEntryPoint> pluginDelegate;
+@property (nonatomic) BOOL toggleSliderButton;
 @property (nonatomic) BOOL toggleMenuButton;
 @property (nonatomic) BOOL toggleReturnButton;
 @property (nonatomic, retain) UIWindow *window;

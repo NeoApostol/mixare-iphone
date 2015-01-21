@@ -49,7 +49,8 @@
     SourceViewController *sourceViewController;
     
     NSArray *startPlugin;
-    BOOL toggleMenuButton;
+	BOOL toggleMenuButton;
+	BOOL toggleSliderButton;
     BOOL toggleReturnButton;
     id<PluginEntryPoint> pluginDelegate;
     

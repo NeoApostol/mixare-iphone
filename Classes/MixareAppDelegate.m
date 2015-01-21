@@ -25,7 +25,7 @@
  
 @implementation MixareAppDelegate
 
-@synthesize toggleReturnButton, toggleMenuButton, pluginDelegate, alertRunning, _dataSourceManager, window;
+@synthesize toggleReturnButton, toggleSliderButton, toggleMenuButton, pluginDelegate, alertRunning, _dataSourceManager, window;
 
 static ProgressHUD *hud;
 
@@ -351,9 +351,12 @@ static ProgressHUD *hud;
  ***/
 - (void)initControls {    
     [augViewController initInterface];
-    if (!toggleMenuButton) {
-        augViewController.menuButton.hidden = YES;
-    }
+	if (!toggleMenuButton) {
+		augViewController.menuButton.hidden = YES;
+	}
+	if (!toggleSliderButton) {
+		augViewController.sliderButton.hidden = YES;
+	}
 	[augViewController startListening:_locationManager];
     if (!toggleReturnButton) {
         augViewController.backToPlugin.hidden = YES;
